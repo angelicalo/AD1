@@ -1,0 +1,103 @@
+using System;
+
+class Stack {
+    // StackInArray - Array
+    class StackInArray {
+        int[] array;
+        int top;
+    
+        public StackInArray (int capacity) {
+            this.array = new int[capacity];
+            this.top = -1;
+        }
+    
+        public void Push (int item) {
+            if (IsFull ())
+    	        throw new Exception ("Pilha cheia");
+            top++;
+            array[top] = item;
+        }
+    
+        public int Pop () {
+            if (IsEmpty ())
+    	        throw new Exception ("Pilha vazia");
+            int item = array[top];
+            top--;
+            return item;
+        }
+    
+        public int Peek () {
+            if (IsEmpty ())
+    	        throw new Exception ("Pilha vazia");
+            return array[top];
+        }
+    
+        public bool IsEmpty () {
+            return (top == -1);
+        }
+    
+        public bool IsFull () {
+            return (top == (array.Length - 1));
+        }
+    
+        public int Count () {
+            return (top + 1);
+        }
+    }
+    
+    class Node {
+        public int item; // dado a ser armazenado
+        public Node next; // ref. para próx. nó
+        
+        public Node(int newItem, Node nextNode) {
+            this.item = newItem;
+            this.next = nextNode;
+        }
+    }
+    
+    // StackInList - Lista ligada
+    class StackInList {
+        Node top;
+        int count;
+    
+        public StackInList () {
+            this.top = null;
+        }
+    
+        public void Push(int item) {
+            Node newNode = new Node(item, top);
+            top = newNode;
+            count++;
+            return;
+        }
+    
+        public int Pop() {
+            if (IsEmpty())
+                throw new Exception("Pilha vazia");
+            int item = top.item;
+            top = top.next;
+            count--;
+            return item;
+        }
+    
+        public int Peek() {
+            if (IsEmpty())
+                throw new Exception("Pilha vazia");
+            return top.item;
+        }
+    
+        public bool IsEmpty () {
+            return (top == null);
+        }
+        
+        public int Count () {
+            return (count);
+        }
+         
+    }
+
+    static void Main () {
+        StackInArray Pilha1 = new StackInArray(2);
+        StackInList Pilha2 = new StackInList();
+    }
+}
