@@ -1,9 +1,8 @@
 # ED1
 
-
-Stack - Pilha
+TAD Stack - Pilha
   - Em Array
   - Em Lista Ligada
 
-Queue - Fila
+TAD Queue - Fila
   - Em Array Circular
