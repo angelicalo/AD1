@@ -1,0 +1,59 @@
+using System;
+
+class Queue {
+    // Array Circular
+    class QueueInArray {
+        int[] array;
+        int inicio;
+        int final;
+        int count;
+        
+        public QueueInArray (int capacity) {
+            this.array = new int[capacity];
+            this.inicio = 0;
+            this.final = -1;
+            this.count = 0;
+        }
+        
+        public void Enqueue(int newItem) {
+            if (IsFull())
+                throw new Exception("Fila cheia");
+            final = (final + 1) % array.Length;
+            array[final] = newItem;
+            count++;
+        }
+        
+        public int Dequeue() {
+            if (IsEmpty())
+                throw new Exception("Fila vazia");
+            int item = array[inicio];
+            inicio = (inicio + 1) % array.Length;
+            count--;
+            return item;
+        }
+        
+        public int Peek() {
+            if (IsEmpty())
+                throw new Exception("Fila vazia");
+            return array[inicio];
+        
+        }
+        
+        public int Count() {
+            return count;
+        }
+        
+        public bool IsEmpty() {
+            return (count == 0);
+        }
+        
+        public bool IsFull() {
+            return (count == (array.Length));
+        }
+        
+    }
+
+    static void Main () {
+        QueueInArray Fila = new QueueInArray(2);
+  }
+}
