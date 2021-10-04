@@ -12,10 +12,9 @@
     
     Trabalho 6 - Aplicação de Algoritmos de Busca
 
+# Provas
 
-
-
-Modulos
+## Prova 1 - Notas: Q1 9/9 | Q2 7/8 | Q3 8/8
 
 Módulo 1 - Introdução à Programação Orientada a Objetos
 
@@ -23,9 +22,13 @@ Módulo 2 - A Pilha como um Tipo Abstrato de Dados
 
 Módulo 3 - A Fila como um Tipo Abstrato de Dados
 
+## Prova 2 - Notas: Q1 8/8 | Q2 7/8 | Q3 7/9
+
 Módulo 4 - Listas Simples
 
 Módulo 5 - Listas Circulares e Duplamente Ligadas
+
+## Prova 3 - Notas: não aplicada
 
 Módulo 6 - Introdução à Análise de Algoritmos
 
