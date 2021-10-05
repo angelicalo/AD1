@@ -3,7 +3,7 @@
 ***************************************************/
 using System;
 
-class Trabalho3 {
+class Trabalho5 {
     class ListInArray {
         int[] items;
         int count;
@@ -96,8 +96,7 @@ class Trabalho3 {
                     return i;
             }
             return -1;
-        }
-        
+        }        
         
         public int Get(int i) { 
             if (i >= count){
@@ -220,8 +219,7 @@ class Trabalho3 {
             watch1.Stop();
             
             Console.WriteLine(watch1.Elapsed);
-        }
-        
+        }        
         
         Console.WriteLine("\nBUSCA LINEAR");
         for (int j=0; j<Ns.Length;j++){
