@@ -14,7 +14,7 @@
 
 # Provas
 
-## Prova 1 - Notas: Q1 9/9 | Q2 7/8 | Q3 8/8
+## Prova 1 - Notas: Q1 100%| Q2 86% | Q3 100%
 
 Módulo 1 - Introdução à Programação Orientada a Objetos
 
@@ -22,13 +22,13 @@ Módulo 2 - A Pilha como um Tipo Abstrato de Dados
 
 Módulo 3 - A Fila como um Tipo Abstrato de Dados
 
-## Prova 2 - Notas: Q1 8/8 | Q2 7/8 | Q3 7/9
+## Prova 2 - Notas: Q1 100% | Q2 86% | Q3 78%
 
 Módulo 4 - Listas Simples
 
 Módulo 5 - Listas Circulares e Duplamente Ligadas
 
-## Prova 3 - Notas: não aplicada
+## Prova 3 - Notas: Não compareci
 
 Módulo 6 - Introdução à Análise de Algoritmos
 
